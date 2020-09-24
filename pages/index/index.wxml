@@ -1,0 +1,40 @@
+<view>
+  <view>
+    <image class="canvas-data-item" mode="topleft" style="width:200rpx;height:200rpx"
+      src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode='{{testMode}}'></image>
+  </view>
+  <view class="canvas-data-item bg-2" style="display: flex; margin: 15rpx 0;">
+    <view class="flex-col-center bg-5 canvas-data-item"
+      style='margin-right: 20rpx;width:200rpx;height: 200rpx;text-align: center;color: #fff;'>
+      左边的盒子
+    </view>
+    <view class="flex-col-center bg-13 canvas-data-item"
+      style='margin-right: 20rpx;width:200rpx;height: 200rpx;text-align: center;color: #fff;'>
+      右边的盒子
+    </view>
+  </view>
+  <view>
+    <view class="bg-1 canvas-data-item text-block" style="text-align: left;line-height: 100px;">
+      文字居左
+    </view>
+    <view class="bg-2 canvas-data-item text-block" style="text-align: center;line-height: 100px;">
+      文字居中
+    </view>
+    <view class="bg-3 canvas-data-item text-block" style="text-align: right;line-height: 100px;">
+      文字居右
+    </view>
+    <view class="bg-1 canvas-data-item text-block" style="text-align: center;">
+      文字居上
+    </view>
+    <view class="bg-2 canvas-data-item text-block" style="text-align: center;">
+      <view class="absolute-center" style="bottom:0;">文字居下</view>
+    </view>
+    <view class="bg-3 canvas-data-item text-block" style="text-align: left;">
+      文字居左上
+    </view>
+  </view>
+</view>
+<text>下方为canvas</text>
+<canvas type='2d' class="drawCanvas" id='drawCanvas' canvas-id="drawCanvas"
+  style="width: {{canvas.width}}px; height: {{canvas.height}}px; left: {{canvas.left}}px; top: {{canvas.top}}px;"
+  catchtap='hideCanvas' width='{{canvas.width}}' height='{{canvas.height}}'></canvas>
